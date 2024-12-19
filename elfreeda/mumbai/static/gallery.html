@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Responsive gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center">My Gallery</h1>
+    <div class="fullImg" id="full-imgbox">
+        <img src="dekhmeraphoto.png" id="full-img">
+        <span onclick="closeFullImg()"></span>
+    </div>
+    <div class="img-gallery">
+        <img src="dekhmeraphoto.png" width=513.447px height=413.968px onclick="openFullImg(this.src)">
+        <img src="dhoni.png" width=513.447px height=413.968px onclick="openFullImg(this.src)">
+        <img src="rohit.png" width=513.447px height=413.968px onclick="openFullImg(this.src)">
+        <img src="rutu.png" width=513.447px height=413.968px onclick="openFullImg(this.src)">
+        <img src="ashwin.png" width=513.447px height=413.968px onclick="openFullImg(this.src)">
+        <img src="varuncv.png" width=513.447px height=413.968px onclick="openFullImg(this.src)">
+    </div>
+<script>
+    var full-imgbox = document.getElementById("full-imgbox");
+    var full-img = document.getElementById("full-img");
+
+    function openFullImg(pic){
+        full-imgbox.style.display= "flex"; 
+        full-imgbox.src=pic;
+        
+    }
+</script>
+<footer>
+    <p align="center">Designed and developed by Elfreeda Jesusha J</p>
+</footer>
+</body>
+</html>
